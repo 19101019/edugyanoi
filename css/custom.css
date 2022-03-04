@@ -1,0 +1,230 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+-------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/** ADD YOUR AWESOME CODES HERE **/
+
+/** INDEX PAGE **/
+.profile-button {
+  margin-top: 2vh;
+  align-items: center;
+  justify-content: space-around;
+  height: 1em;
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(
+    47deg,
+    rgb(241, 138, 29) 0px,
+    rgb(243, 84, 97) 100%
+  );
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  height: auto;
+  font-size: 1em;
+  /* width: 70%; */
+  align-self: center;
+  margin-top: 0px;
+  border: 0px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0px 0px;
+  min-width: 100px;
+}
+
+@media (min-width: 315px) and (max-width: 426px) {
+  .profile-button {
+    flex-direction: column;
+  }
+}
+
+/* HELP FILE */
+
+#content {
+  background-image: url("./images/login-bg.jfif");
+  background-size: cover;
+}
+
+/* POPUP */
+
+.close {
+  padding: 0px;
+  cursor: pointer;
+  background: 0px center;
+  border: 0px;
+  appearance: none;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  opacity: 1;
+  /* float: right; */
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255 255 255) 0px 1px 0px;
+}
+
+.close :hover {
+  border: 2px solid #efefef;
+}
+
+.popup1 {
+  font-family: "Poppins", sans-serif;
+  /* border: 2px solid black; */
+  box-shadow: 0 2px 7px #292929;
+  border-radius: 8px;
+
+}
+
+.popup_logo {
+  display: flex;
+  justify-content: center;
+  margin: 0.8em;
+}
+
+.popup_logo img {
+  height: 40px;
+  width: 40px;
+}
+
+div.pop_head2 {
+  margin-bottom: 0;
+}
+
+.pop_head2 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.pop_head2 input {
+  min-width: 200px;
+  height: 40px;
+  border: 1px solid #3a3a3a;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: black;
+  padding-left: 1em;
+}
+
+.s1 {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* margin: auto; */
+  padding: 0.5em 1em;
+}
+
+.s1 span {
+  margin-left: 0.5em;
+  flex: 0.2;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+button.btn.btn-default.dropdown-toggle {
+  margin: 0;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.s1 .dropdown {
+  flex: 0.8;
+  width: 70%;
+}
+
+.dropdown button {
+  width: 100%;
+  border: 2px solid orangered;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.s1 span {
+  font-size: 1.1em;
+  font-weight: 500;
+  /* font-weight: bold;  */
+  /* margin-right: 20px */
+}
+
+.two-btn {
+  margin: auto;
+  margin-bottom: 1em;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 20px;
+}
+
+.btnSubmit {
+  padding: 5px 20px;
+  background-color: rgb(238, 120, 41);
+  color: white;
+}
+
+.btnReset{
+  padding : 5px 20px;
+}
+
+@media (min-width: 315px) and (max-width: 426px) {
+  .pop_head2 {
+    padding: 0 1em;
+    width: 90%;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  .s1 {
+    width: 90%;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+  }
+
+  .s1 span {
+    flex: 0.4;
+  }
+
+  .s1 .dropdown {
+    flex: 0.6;
+    width: 50%;
+  }
+
+  .two-btn {
+    margin: auto;
+    margin-bottom: 1em;
+    width: 100%;
+    margin-top: 1rem;
+    /* padding: 0 20px; */
+  }
+  .btnSubmit{
+    padding: 0.2em;
+  }
+  .btnReset{
+    padding: 0.2em;
+  }
+}
