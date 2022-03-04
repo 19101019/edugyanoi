@@ -52,13 +52,16 @@ p {
   color: #101f30;
 }
 
-.s_s {
-  /* color: #000000; */
-  /* padding: 1em; */
+.card_container{
   display: flex;
-  /* flex-direction: column; */
-  padding-top: 2em
-  /* margin-top: -1.5rem; */
+  flex-direction: column;
+}
+
+.s_s {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 1em
 }
 
 .s_s li {
@@ -91,9 +94,43 @@ p {
   color: #979797;
 }
 
+.cc-button_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc-btn1 {
+  width: fit-content;
+  /* max-width: 550px; */
+  /* margin-top: 10px; */
+  /* margin: 1.2em; */
+  background: #e6810e;
+  border-radius: 8px;
+  box-shadow: #000000 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #15283c;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 0.7em;
+  /* padding: 12px 18px; */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  word-break: break-word;
+  border: 0;
+  margin: 0.2em;
+}
+
 ::placeholder {
   color: #15283c;
 }
+
 .s_s li p {
   margin: 0 3px;
   color: #15283cf5;
@@ -382,6 +419,13 @@ input::-webkit-inner-spin-button {
 
 }
 
+@media (min-width: 426px) and (max-width: 769px){
+  .s_s{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 315px) and (max-width: 426px) {
   .settings_input {
     /* min-width: 290px; */
@@ -393,6 +437,11 @@ input::-webkit-inner-spin-button {
 
   .setting_section h4 {
     font-size: 1.5em;
+  }
+
+  .s_s{
+    display: flex;
+    flex-direction: column;
   }
   .s_s h5 {
     display: flex;
@@ -554,7 +603,26 @@ input::-webkit-inner-spin-button {
   .user_dropdowns{
     margin-top: 1.2em;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.profile_section{
+  align-items: center;
+}
+
+.user_memo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_info{
+  width: 100%;
+  
+}
+
 }
 
 @media (min-width: 315px) and (max-width: 425px) {
@@ -577,6 +645,29 @@ input::-webkit-inner-spin-button {
   .profile_info{
     margin-top: 1em;
   }
+
+  .user_dropdowns{
+    margin-top: 1.2em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_section{
+  align-items: center;
+}
+
+.user_memo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_info{
+  width: 100%;
+  
+}
 
 }
 
