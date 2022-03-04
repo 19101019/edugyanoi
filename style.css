@@ -917,7 +917,7 @@ a[data-toggle="collapse"] {
   padding: 60px 25px 25px 305px;
   background-image: url("./images/login-bg.jfif");
   background-size: cover;
-  /* background: #f8f8f8; */
+  background: #f8f8f8;
 }
 
 .page_title {
