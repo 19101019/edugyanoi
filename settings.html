@@ -32,13 +32,37 @@
     <link rel="stylesheet" href="js/semantic.min.css" />
     
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Kalam:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Kalam:wght@700&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 </head>
+<style>
+   *{
+      font-family: 'Montserrat', sans-serif;
+   }
+   td, th{
+      font-size: 16px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+   }
+.thead{
+   background-color: #ff5722;
+}
+th{
+   color: azure;
+}
 
+</style>
 <body class="inner_page widgets">
     <div class="full_container">
         <div class="inner_container">
@@ -230,127 +254,89 @@
                                 <div class="table_section padding_infor_info">
                                    <div class="table-responsive-sm">
                                       <table class="table">
-                                         <thead class="thead-dark">
+                                         <thead class="thead">
                                             <tr>
-                                               <th>S. No.</th>
-                                               <th></th>
-                                               <th>Email</th>
+                                             <b>  <th >S. No.</th>
+                                               <th>Plan Name</th>
+                                               <th>Select</th></b>
                                             </tr>
                                          </thead>
                                          <tbody>
                                             <tr>
-                                               <td>John</td>
-                                               <td>Doe</td>
-                                               <td>john@example.com</td>
+                                               <td>1.</td>
+                                               <td>Silver</td>
+                                               <td><input type="radio"class="defaultCheckbox" style="width: 15px;
+                                                height: 15px;"></td>
                                             </tr>
                                             <tr>
-                                               <td>Mary</td>
-                                               <td>Moe</td>
-                                               <td>mary@example.com</td>
+                                             <td>2.</td>
+                                               <td>Gold</td>
+                                               <td><input type="radio"class="defaultCheckbox" style="width: 15px;
+                                                height: 15px;"></td>
                                             </tr>
                                             <tr>
-                                               <td>July</td>
-                                               <td>Dooley</td>
-                                               <td>july@example.com</td>
+                                             <td>3.</td>
+                                             <td>Diamond</td>
+                                             <td><input type="radio"class="defaultCheckbox" style="width: 15px;
+                                              height: 15px;"></td>
                                             </tr>
                                          </tbody>
                                       </table>
-                                      <table class="table">
-                                         <thead class="thead-light">
-                                            <tr>
-                                               <th>S. No.</th>
-                                               <th>Lastname</th>
-                                               <th>Email</th>
-                                            </tr>
-                                         </thead>
-                                         <tbody>
-                                            <tr>
-                                               <td>John</td>
-                                               <td>Doe</td>
-                                               <td>john@example.com</td>
-                                            </tr>
-                                            <tr>
-                                               <td>Mary</td>
-                                               <td>Moe</td>
-                                               <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                               <td>July</td>
-                                               <td>Dooley</td>
-                                               <td>july@example.com</td>
-                                            </tr>
-                                         </tbody>
-                                      </table>
+
                                    </div>
                                 </div>
                              </div>
                           </div>
                           <!-- table section -->
                           <div class="col-md-6">
-                             <div class="white_shd full margin_bottom_30">
-                                <div class="full graph_head">
-                                   <div class="heading1 margin_0">
-                                      <h2>Pricing Plans</h2>
-                                   </div>
-                                </div>
-                                <div class="table_section padding_infor_info">
-                                   <div class="table-responsive-sm">
-                                      <table class="table">
-                                         <thead class="thead-dark">
-                                            <tr>
-                                               <th>Firstname</th>
-                                               <th>Lastname</th>
-                                               <th>Email</th>
+                           <div class="white_shd full margin_bottom_30">
+                              <div class="full graph_head">
+                                 <div class="heading1 margin_0">
+                                    <h2>Your Subscription</h2>
+                                 </div>
+                              </div>
+                              <div class="table_section padding_infor_info">
+                                 <div class="table-responsive-sm">
+                                    <table class="table">
+                                       <thead class="thead">
+                                          <tr>
+                                           <b>  <th >S.No</th>
+                                             <th>Module Name</th>
+                                             <th>Select</th></b>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>1.</td>
+                                             <td>Enterprise Setup</td>
+                                             <td><input type="checkbox"class="defaultCheckbox" style="width: 15px;
+                                              height: 15px;"></td>
+                                          </tr>
+                                          <tr>
+                                           <td>2.</td>
+                                             <td>Compliance Management</td>
+                                             <td><input type="checkbox"class="defaultCheckbox" style="width: 15px;
+                                              height: 15px;"></td>
+                                          </tr>
+                                          <tr>
+                                           <td>3.</td>
+                                           <td>Marketing and Sales</td>
+                                           <td><input type="checkbox"class="defaultCheckbox" style="width: 15px;
+                                            height: 15px;"></td>
+                                          </tr>
+                                          <tr>
+                                             <td>4.</td>
+                                             <td>Financial Management</td>
+                                             <td><input type="checkbox"class="defaultCheckbox" style="width: 15px;
+                                              height: 15px;"></td>
                                             </tr>
-                                         </thead>
-                                         <tbody>
-                                            <tr>
-                                               <td>John</td>
-                                               <td>Doe</td>
-                                               <td>john@example.com</td>
-                                            </tr>
-                                            <tr>
-                                               <td>Mary</td>
-                                               <td>Moe</td>
-                                               <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                               <td>July</td>
-                                               <td>Dooley</td>
-                                               <td>july@example.com</td>
-                                            </tr>
-                                         </tbody>
-                                      </table>
-                                      <table class="table">
-                                         <thead class="thead-light">
-                                            <tr>
-                                               <th>Firstname</th>
-                                               <th>Lastname</th>
-                                               <th>Email</th>
-                                            </tr>
-                                         </thead>
-                                         <tbody>
-                                            <tr>
-                                               <td>John</td>
-                                               <td>Doe</td>
-                                               <td>john@example.com</td>
-                                            </tr>
-                                            <tr>
-                                               <td>Mary</td>
-                                               <td>Moe</td>
-                                               <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                               <td>July</td>
-                                               <td>Dooley</td>
-                                               <td>july@example.com</td>
-                                            </tr>
-                                         </tbody>
-                                      </table>
-                                   </div>
-                                </div>
-                             </div>
-                          </div>
+                                       </tbody>
+                                    </table>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                           <!-- table section -->
                           <div class="col-md-12">
                              <div class="white_shd full margin_bottom_30">
