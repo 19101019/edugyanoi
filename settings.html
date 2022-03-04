@@ -265,19 +265,19 @@ th{
                                             <tr>
                                                <td>1.</td>
                                                <td>Silver</td>
-                                               <td><input type="radio"class="defaultCheckbox" style="width: 15px;
+                                               <td><input  type="checkbox" class="radio" value="1" name="fooby[2][]" style="width: 15px;
                                                 height: 15px;"></td>
                                             </tr>
                                             <tr>
                                              <td>2.</td>
                                                <td>Gold</td>
-                                               <td><input type="radio"class="defaultCheckbox" style="width: 15px;
+                                               <td><input  type="checkbox" class="radio" value="1" name="fooby[2][]" style="width: 15px;
                                                 height: 15px;"></td>
                                             </tr>
                                             <tr>
                                              <td>3.</td>
                                              <td>Diamond</td>
-                                             <td><input type="radio"class="defaultCheckbox" style="width: 15px;
+                                             <td><input  type="checkbox" class="radio" value="1" name="fooby[2][]" style="width: 15px;
                                               height: 15px;"></td>
                                             </tr>
                                          </tbody>
@@ -435,6 +435,26 @@ th{
     <!-- calendar file css -->
     <script src="js/semantic.min.js"></script>
     <script></script>
+
+    <script>
+       // the selector will match all input controls of type :checkbox
+// and attach a click event handler 
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+    </script>
 </body>
 
 </html>
