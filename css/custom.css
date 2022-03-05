@@ -257,6 +257,7 @@ button.btn.btn-default.dropdown-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .wrapper img{
   height: 100%;
@@ -270,7 +271,7 @@ button.btn.btn-default.dropdown-toggle {
 .wrapper .text{
   font-size: 20px;
   font-weight: 500;
-  color: #5B5B7B;
+  color: #214162;
 }
 .wrapper #cancel-btn i{
   /* width: 70%; */
@@ -298,15 +299,25 @@ button.btn.btn-default.dropdown-toggle {
   padding-left: 1em;
   /* display: none; */
   /* background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%); */
-  background: -webkit-linear-gradient( 47deg, rgb(241, 138, 29) 0px, rgb(243, 84, 97) 100% );;
+  background: #214162;
+  border-radius: 7px;
+  /* background: -webkit-linear-gradient( 47deg, rgb(241, 138, 29) 0px, rgb(243, 84, 97) 100% );; */
 }
+
 .wrapper.active:hover .file-name{
   display: block;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container #custom-btn{
   margin-top: 30px;
   display: block;
-  width: 100%;
+  width: 30%;
   height: 3em;
   border: none;
   outline: none;
