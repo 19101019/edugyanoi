@@ -61,7 +61,8 @@ p {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 1em
+  padding-top: 1em;
+  padding: 1em 2em;
 }
 
 .s_s li {
@@ -102,6 +103,7 @@ p {
 }
 
 .cc-btn1 {
+  min-width: 100px;
   width: fit-content;
   /* max-width: 550px; */
   /* margin-top: 10px; */
@@ -114,10 +116,10 @@ p {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 1;
   outline: 0 solid transparent;
-  padding: 0.7em;
+  padding: 0.5em;
   /* padding: 12px 18px; */
   user-select: none;
   -webkit-user-select: none;
@@ -672,4 +674,88 @@ input::-webkit-inner-spin-button {
 }
 
 
+/* Payment Mode  */
 
+.sub__section{
+  padding: 1em;
+  display: flex;
+}
+
+.top_bottom {
+  padding: 0.5em 0.4em;
+  float: left;
+  width: 100%;
+}
+
+.sub_heading{
+  display: flex;
+  margin: 1.3em 0;
+  display: flex;
+  align-items: center;
+  /* width: 50%; */
+}
+
+.sub_heading h4{
+  font-size: 1.2em;
+  margin-bottom: 0;
+  font-weight: 400;
+  /* color: #15283c; */
+}
+.sub_heading input{
+  height: 17px;
+  width: 17px;
+  font-size: 1.2em;
+  margin: 0 1em 0;
+  /* color: #15283c; */
+  /* border-radius: 7px; */
+}
+
+.on_check{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+.pay_inputs{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 400;
+  margin: 1em 1em;
+  display: flex;
+
+}
+.pay_inputs h5{
+  color: #15283c;
+  margin: 0.5em 0;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: none;
+   /* margin: 0.2em 0; */
+}
+.pay_inputs input{
+  min-width: 200px;
+  padding: 4px;
+  width: 100%;
+  max-width: 480px;
+  background-color: #adadad50;
+  border: 2px solid #adadad50;
+  border-radius: 5px;
+  color: #979797;
+  /* padding: 0.2em;
+  border: 1px solid #101f30;
+  border-radius: 7px; */
+  /* border-bottom: 1px solid #101f30; */
+}
+
+
+
+.cc-button_pay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1em;
+}

@@ -424,33 +424,34 @@
                               <div class="heading1 margin_0">
                                  <h2>Card Details</h2>
                               </div>
-                              <div class="s_s">
-                                 <div class="cc_inp">
-                                    <h5>Credit Card Number:</h5>
-                                    <input type="number" placeholder="Credit Card No.">
 
-                                 </div>
-                                 <div class="cc_inp">
-                                    <h5>Valid Upto:</h5>
-                                    <input type="number" placeholder="mm" min='1' max="12" id="valid">
-                                    <input type="number" placeholder="dd" min='1' max="31" id="valid">
+                           </div>
+                           <div class="s_s">
+                              <div class="cc_inp">
+                                 <h5>Credit Card Number:</h5>
+                                 <input type="number" placeholder="Credit Card No.">
 
-                                 </div>
-                                 <div class="cc_inp2">
-                                    <h5 id="inl">CVV:</h5>
-                                    <div id="inl">
-                                       <input type="number" placeholder="CVV" min='1' max="999" id="valid">
-
-                                    </div>
-                                 </div>
-
-                                 <div class="cc-button_div">
-                                    <button class="cc-btn1">Save Your Card</button>
-                                    <button class="cc-btn1">Remove Your Card</button>
-                                 </div>
-
-            
                               </div>
+                              <div class="cc_inp">
+                                 <h5>Valid Upto:</h5>
+                                 <input type="number" placeholder="mm" min='1' max="12" id="valid">
+                                 <input type="number" placeholder="dd" min='1' max="31" id="valid">
+
+                              </div>
+                              <div class="cc_inp2">
+                                 <h5 id="inl">CVV:</h5>
+                                 <div id="inl">
+                                    <input type="number" placeholder="CVV" min='1' max="999" id="valid">
+
+                                 </div>
+                              </div>
+
+                              <div class="cc-button_div">
+                                 <button class="cc-btn1">Save Your Card</button>
+                                 <button class="cc-btn1">Remove Your Card</button>
+                              </div>
+
+
                            </div>
                            <!-- <div class="table_section padding_infor_info">
                                    <div class="table-responsive-sm">
@@ -513,6 +514,40 @@
                                  <p class="note_cont">If you use this site regularly and would like to help keep the
                                     site on the Internet.</p>
                               </div>
+                              <div class="sub__section">
+                                 <div class=" top_bottom">
+                                    <div class="sub_heading">
+                                       <input id="cheque" onchange="defaultBtnActive()" type="radio" name="payment">
+                                       <h4>Payment By Cheque</h4>
+                                    </div>
+                                    <div id="cheque_detail" class="on_check">
+                                       <div class="pay_inputs">
+                                          <h5>Transfer Ref No.</h5>
+                                          <input type="" placeholder="">
+                                       </div>
+                                       <div class="pay_inputs">
+                                          <h5>Payment Amount</h5>
+                                          <input type="number" placeholder="">
+                                       </div>
+                                       <div class="cc-button_pay">
+                                          <button class="cc-btn1">Save</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 
+                                 <div class="top_bottom">
+                                    <div class="sub_heading">
+                                       <input id="gateway" onchange="defaultBtnActive2()" type="radio" name="payment">
+                                       <h4>Via Payment Getway</h4>
+                                    </div>
+                                    <!-- <div class="on_check">
+                                                                     
+                                                                  </div> -->
+                                 </div>
+                              </div>
+                              
+
+
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -549,7 +584,27 @@
                                  </div>
                               </div>
                            </div>
+
+                           <div class="full white_shd" style="margin-top: 1.5em;">
+                              <div class="full graph_head">
+                                 <div class="heading1 margin_0">
+                                    <h2>Wroking Days</h2>
+                                 </div>
+                              </div>
+                              <div class="full padding_infor_info">
+                                 <div class="sub_heading">
+                                    <h4>Monday - Friday</h4>
+                                    <input  type="radio" name="days">
+                                 </div>
+                                 <div class="sub_heading">
+                                    <h4>Monday - Saturday</h4>
+                                    <input  type="radio" name="days">
+                                 </div>
+                              </div>
+                           </div>
                         </div>
+
+                        
                      </div>
                   </div>
                </div>
@@ -597,7 +652,39 @@
    <script src="js/custom.js"></script>
    <!-- calendar file css -->
    <script src="js/semantic.min.js"></script>
-   <script></script>
+   <script>
+      // const radio =  document.querySelectorAll('input[type=radio][name="payment"]')
+      const cheque = document.getElementById('cheque');
+      const gateway = document.getElementById('gateway');
+      const cheque_detail = document.getElementById('cheque_detail');
+      
+         function defaultBtnActive() {
+            // preventDefalut();
+            cheque.click();
+            // return false;
+         }
+         
+         cheque.addEventListener("change", function () {
+            if(cheque.checked){
+               console.log(cheque.checked)
+               cheque_detail.classList.add('active');
+
+            }
+           
+         });
+         function defaultBtnActive2() {
+               // preventDefalut();
+               gateway.click();
+               // return false;
+            }
+         gateway.addEventListener("change", function () {
+            if(gateway.checked){
+               cheque_detail.classList.remove('active');
+               location. href = "www.yoursite.com";
+            }           
+         });
+   </script>
+
 
    <script>
       // the selector will match all input controls of type :checkbox
