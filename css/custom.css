@@ -182,6 +182,7 @@ button.btn.btn-default.dropdown-toggle {
   justify-content: space-between;
   margin-top: 1rem;
   padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 .btnSubmit {
