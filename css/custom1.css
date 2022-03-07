@@ -759,3 +759,10 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   margin: 0 1em;
 }
+
+@media (min-width: 315px) and (max-width: 426px){
+  .sub__section{
+    display: flex;
+    flex-direction: column;
+  }
+}
