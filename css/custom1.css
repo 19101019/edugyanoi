@@ -104,17 +104,16 @@ p {
 
 .cc-btn1 {
   min-width: 100px;
-  width: fit-content;
-  /* max-width: 550px; */
+
+  width: 200px; 
   /* margin-top: 10px; */
   /* margin: 1.2em; */
   background: #e6810e;
   border-radius: 8px;
   box-shadow: #000000 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #15283c;
+  color: #ffffff;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
   font-size: 1em;
   font-weight: 500;
   opacity: 1;
@@ -252,7 +251,7 @@ p {
   box-sizing: border-box;
   color: #15283c;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: 400;
   opacity: 1;

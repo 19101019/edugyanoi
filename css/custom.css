@@ -88,10 +88,13 @@
 
 }
 
+
+
+
 .popup_logo {
   display: flex;
   justify-content: center;
-  margin: 0.8em;
+  padding-top: 0.8em;
 }
 
 .popup_logo img {
@@ -179,6 +182,7 @@ button.btn.btn-default.dropdown-toggle {
   justify-content: space-between;
   margin-top: 1rem;
   padding: 0 20px;
+  padding-bottom: 20px;
 }
 
 .btnSubmit {
