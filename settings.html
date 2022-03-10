@@ -32,8 +32,10 @@
    <link rel="stylesheet" href="js/semantic.min.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Kalam:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        
+   <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Kalam:wght@700&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet">
+
    <link rel="stylesheet" href="style.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +50,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Kalam:wght@700&family=Montserrat:wght@200;300&display=swap"
       rel="stylesheet">
- 
+
 </head>
 <style>
    * {
@@ -69,7 +71,6 @@
    th {
       color: azure;
    }
-
 </style>
 
 <body class="inner_page widgets">
@@ -320,7 +321,7 @@
 
                      <!-- table section -->
                      <div class="col-md-6">
-                        <div class="white_shd full margin_bottom_30">
+                        <div class="white_shd full">
                            <div class="full graph_head">
                               <div class="heading1 margin_0">
                                  <h2>Pricing Plans</h2>
@@ -368,7 +369,7 @@
 
                      <!-- table section -->
                      <div class="col-md-6">
-                        <div class="white_shd full margin_bottom_30">
+                        <div class="white_shd full">
                            <div class="full graph_head">
                               <div class="heading1 margin_0">
                                  <h2>Your Subscription</h2>
@@ -490,138 +491,146 @@
                                       </table>
                                    </div>
                                 </div> -->
-                        </div>
+                  </div>
+               </div>
+
+
+               <div class="col-md-6 row white_shd" style="margin: 0.8em;">
+                  <div class="full graph_head">
+                     <div class="heading1 margin_0">
+                        <h2>Working Days</h2>
                      </div>
-
-
-
-
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="full white_shd">
-                              <div class="full graph_head">
-                                 <div class="heading1 margin_0">
-                                    <h2>Payment Methods</h2>
-
-                                 </div>
-                              </div>
-                             
-                              <div class="sub__section">
-                                 <div class=" top_bottom">
-                                    <div class="sub_heading">
-                                       <input id="cheque" onchange="defaultBtnActive()" type="radio" name="payment">
-                                       <h4>Payment By Cheque</h4>
-                                    </div>
-                                    <div id="cheque_detail" class="on_check">
-                                       <div class="pay_inputs">
-                                          <h5>Transfer Ref No.</h5>
-                                          <input type="" placeholder="">
-                                       </div>
-                                       <div class="pay_inputs">
-                                          <h5>Payment Amount</h5>
-                                          <input type="number" placeholder="">
-                                       </div>
-                                       <div class="pay_inputs">
-                                          <h5>Payment Date</h5>
-                                          <input type="date" placeholder="">
-                                       </div>
-                                       <div class="btn-group text-center ml-5" role="group" aria-label="Basic example">
-                                          <button type="button" class="btn mr-2" style="border-radius: 4px; background-color: #ff5722; color: aliceblue;" >Submit</button>
-                                          
-                                          <button type="button" class="btn mr-2" style="border-radius: 4px; background-color: #ff5722; color: aliceblue;">Reset</button>
-                                        </div>
-                                       
-                                    </div>
-                                 </div>
-                                 
-                                 <div class="top_bottom">
-                                    <div class="sub_heading">
-                                       <input id="gateway" onchange="defaultBtnActive2()" type="radio" name="payment">
-                                       <h4>Via Payment Getway</h4>
-                                    </div>
-                                    <!-- <div class="on_check">
-                                                                     
-                                                                  </div> -->
-                                 </div>
-                              </div>
-                              
-
-
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="full white_shd">
-                              <div class="full graph_head">
-                                 <div class="heading1 margin_0">
-                                    <h2>Total Amount</h2>
-                                 </div>
-                              </div>
-                              <div class="full padding_infor_info">
-                                 <div class="price_table">
-                                    <div class="table-responsive">
-                                       <table class="table">
-                                          <tbody>
-                                             <tr>
-                                                <th style="width:50%">Subtotal:</th>
-                                                <td>$250.30</td>
-                                             </tr>
-                                             <tr>
-                                                <th>Tax (9.3%)</th>
-                                                <td>$10.34</td>
-                                             </tr>
-                                             <tr>
-                                                <th>Shipping:</th>
-                                                <td>$5.80</td>
-                                             </tr>
-                                             <tr>
-                                                <th>Total:</th>
-                                                <td>$265.24</td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="full white_shd" style="margin-top: 1.5em;">
-                              <div class="full graph_head">
-                                 <div class="heading1 margin_0">
-                                    <h2>Working Days</h2>
-                                 </div>
-                              </div>
-                              <div class="full padding_infor_info">
-                                 <div class="sub_heading">
-                                    <h4>Monday - Friday</h4>
-                                    <input  type="radio" name="days">
-                                 </div>
-                                 <div class="sub_heading">
-                                    <h4>Monday - Saturday</h4>
-                                    <input  type="radio" name="days">
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        
+                  </div>
+                  <div class="full padding_infor_info">
+                     <div class="sub_heading">
+                        <h4>Monday - Friday</h4>
+                        <input type="radio" name="days">
+                     </div>
+                     <div class="sub_heading">
+                        <h4>Monday - Saturday</h4>
+                        <input type="radio" name="days">
                      </div>
                   </div>
                </div>
 
-               <!-- end dashboard inner -->
+               <div class="row  white_shd" style="margin: 0.1em;">
+                  <!-- Total amount -->
+                  <div class="col-md-6">
+                     <div class="full ">
+                        <div class="full graph_head">
+                           <div class="heading1 margin_0">
+                              <h2>Total Amount</h2>
+                           </div>
+                        </div>
+                        <div class="full padding_infor_info">
+                           <div class="price_table">
+                              <div class="table-responsive">
+                                 <table class="table">
+                                    <tbody>
+                                       <tr>
+                                          <th style="width:50%">Subtotal:</th>
+                                          <td>Rs 250.30</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Tax (9.3%)</th>
+                                          <td>Rs 10.34</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Shipping:</th>
+                                          <td>Rs 5.80</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Total:</th>
+                                          <td>Rs 265.24</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                  </div>
+
+                  <div class="col-md-6">
+                     <!-- Payment methods -->
+                     <div class="full ">
+                        <div class="full graph_head">
+                           <div class="heading1 margin_0">
+                              <h2>Payment Methods</h2>
+
+                           </div>
+                        </div>
+
+                        <div class="sub__section">
+                           <div class=" top_bottom">
+                              <div class="sub_heading">
+                                 <input id="cheque" onchange="defaultBtnActive()" type="radio" name="payment">
+                                 <h4>Payment By Cheque</h4>
+                              </div>
+                              <div id="cheque_detail" class="on_check">
+                                 <div class="pay_inputs">
+                                    <h5>Transfer Ref No.</h5>
+                                    <input type="" placeholder="">
+                                 </div>
+                                 <div class="pay_inputs">
+                                    <h5>Payment Amount</h5>
+                                    <input type="number" placeholder="">
+                                 </div>
+                                 <div class="pay_inputs">
+                                    <h5>Payment Date</h5>
+                                    <input type="date" placeholder="">
+                                 </div>
+                                 <div class="btn-group text-center ml-5" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn mr-2"
+                                       style="border-radius: 4px; background-color: #ff5722; color: aliceblue;">Submit</button>
+
+                                    <button type="button" class="btn mr-2"
+                                       style="border-radius: 4px; background-color: #ff5722; color: aliceblue;">Reset</button>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                           <div class="top_bottom">
+                              <div class="sub_heading">
+                                 <input id="gateway" onchange="defaultBtnActive2()" type="radio" name="payment">
+                                 <h4>Via Payment Getway</h4>
+                              </div>
+                              <!-- <div class="on_check">
+                                                                     
+                                                                  </div> -->
+                           </div>
+                        </div>
+
+
+
+                     </div>
+
+
+
+                  </div>
+
+               </div>
             </div>
          </div>
-      </div>
-      <!-- row -->
 
-      <!-- footer -->
-      <div class="container-fluid">
-         <div class="footer">
-            <p>Copyright © 2018 Designed by html.design. All rights reserved.<br><br>
-               Distributed By: <a href="https://themewagon.com/">ThemeWagon</a>
-            </p>
+         <!-- end dashboard inner -->
+      </div>
+   </div>
+   </div>
+   <!-- row -->
+
+   <!-- footer -->
+   <div class="container-fluid">
+      <div class="footer">
+         <div class="buttonGroup">
+            <button class="footerButton">Reset</button>
+            <button class="footerButton">Submit</button>
          </div>
       </div>
+   </div>
    </div>
    <!-- end dashboard inner -->
    </div>
@@ -630,24 +639,24 @@
 
    <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <!--         <h4 class="modal-title">Modal Header</h4> -->
-          </div>
-          <div class="modal-body text-center">
-            <h1>Full screen Transparent Bootstrap Modal</h1>
-            <p>FEEL FRREE TO GET YOUR MODAL CODE HERE FOLKS.</p>
-            <a class="pre-order-btn" href="#">GET THE MODAL CODE</a>
-          </div>
-          <div class="modal-footer">
-            <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-          </div>
-        </div>
-    
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <!--         <h4 class="modal-title">Modal Header</h4> -->
+            </div>
+            <div class="modal-body text-center">
+               <h1>Full screen Transparent Bootstrap Modal</h1>
+               <p>FEEL FRREE TO GET YOUR MODAL CODE HERE FOLKS.</p>
+               <a class="pre-order-btn" href="#">GET THE MODAL CODE</a>
+            </div>
+            <div class="modal-footer">
+               <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            </div>
+         </div>
+
       </div>
-    </div>
+   </div>
    <!-- jQuery -->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
@@ -677,32 +686,32 @@
       const cheque = document.getElementById('cheque');
       const gateway = document.getElementById('gateway');
       const cheque_detail = document.getElementById('cheque_detail');
-      
-         function defaultBtnActive() {
-            // preventDefalut();
-            cheque.click();
-            // return false;
-         }
-         
-         cheque.addEventListener("change", function () {
-            if(cheque.checked){
-               console.log(cheque.checked)
-               cheque_detail.classList.add('active');
 
-            }
-           
-         });
-         function defaultBtnActive2() {
-               // preventDefalut();
-               gateway.click();
-               // return false;
-            }
-         gateway.addEventListener("change", function () {
-            if(gateway.checked){
-               cheque_detail.classList.remove('active');
-               location. href = "www.yoursite.com";
-            }           
-         });
+      function defaultBtnActive() {
+         // preventDefalut();
+         cheque.click();
+         // return false;
+      }
+
+      cheque.addEventListener("change", function () {
+         if (cheque.checked) {
+            console.log(cheque.checked)
+            cheque_detail.classList.add('active');
+
+         }
+
+      });
+      function defaultBtnActive2() {
+         // preventDefalut();
+         gateway.click();
+         // return false;
+      }
+      gateway.addEventListener("change", function () {
+         if (gateway.checked) {
+            cheque_detail.classList.remove('active');
+            location.href = "www.yoursite.com";
+         }
+      });
    </script>
 
 
@@ -726,7 +735,7 @@
       });
    </script>
 
-  
+
 </body>
 
 </html>

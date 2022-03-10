@@ -392,8 +392,8 @@ button.btn.btn-default.dropdown-toggle {
 }
 
 .image-preview img {
-  width: 300px;
-  min-height: 100px;
+  width: 120px;
+  min-height: 120px;
   border-radius: 5px;
   border: 1px solid #214162;
   margin: 0.5em;
