@@ -48,10 +48,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Kalam:wght@700&family=Montserrat:wght@200;300&display=swap"
       rel="stylesheet">
-   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
+ 
 </head>
 <style>
    * {
@@ -72,6 +69,7 @@
    th {
       color: azure;
    }
+
 </style>
 
 <body class="inner_page widgets">
@@ -523,6 +521,10 @@
                                           <h5>Payment Amount</h5>
                                           <input type="number" placeholder="">
                                        </div>
+                                       <div class="pay_inputs">
+                                          <h5>Payment Date</h5>
+                                          <input type="date" placeholder="">
+                                       </div>
                                        <div class="btn-group text-center ml-5" role="group" aria-label="Basic example">
                                           <button type="button" class="btn mr-2" style="border-radius: 4px; background-color: #ff5722; color: aliceblue;" >Submit</button>
                                           
@@ -625,6 +627,27 @@
    </div>
    </div>
    </div>
+
+   <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!--         <h4 class="modal-title">Modal Header</h4> -->
+          </div>
+          <div class="modal-body text-center">
+            <h1>Full screen Transparent Bootstrap Modal</h1>
+            <p>FEEL FRREE TO GET YOUR MODAL CODE HERE FOLKS.</p>
+            <a class="pre-order-btn" href="#">GET THE MODAL CODE</a>
+          </div>
+          <div class="modal-footer">
+            <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+          </div>
+        </div>
+    
+      </div>
+    </div>
    <!-- jQuery -->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
@@ -702,6 +725,8 @@
          }
       });
    </script>
+
+  
 </body>
 
 </html>
